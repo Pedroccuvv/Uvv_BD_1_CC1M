@@ -3,16 +3,16 @@
 mysql -u root -p
 computacao@raiz
 CREATE USER "pedrohenrique" IDENTIFIED BY '202203688';
-GRANT ALL ON . TO pedrohenrique@localhost;
+GRANT ALL ON . TO pedrohenrique@localhost; 
 
 mysql -u pedrohenrique -r
-202203688 /
+202203688 */
 
-/ Criando o database da uvv /
-CREATE DATABASE uvv;
+/* Criando o database da uvv  
+CREATE DATABASE uvv; */
 
-/ Selecionando a database da uvv */
-USE uvv;
+/* Selecionando a database da uvv
+USE uvv;  */
 
 
 /* Realizando a Criação da tabela cargos */
