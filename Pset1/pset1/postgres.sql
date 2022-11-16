@@ -283,6 +283,8 @@ ON DELETE NO ACTION
 ON UPDATE NO ACTION
 NOT DEFERRABLE;
 
+/* inserindo dados na tabela cargos */
+
 INSERT INTO cargos (id_cargo,cargo ,salario_minimo,
 salario_maximo) VALUES
 (AD_PRES, 'President',20080, 40000);
@@ -341,6 +343,9 @@ INSERT INTO cargos (id_cargo,cargo ,salario_minimo,
 salario_maximo) VALUES
 (PR_REP, 'Public Relations Representative',4500, 10500);
 
+
+/* inserindo dados na tabela regioes */
+
 INSERT INTO regioes (id_regiao, nome) VALUES
 (1, 'Europe');
 INSERT INTO regioes (id_regiao, nome) VALUES
@@ -349,6 +354,8 @@ INSERT INTO regioes (id_regiao, nome) VALUES
 (3, 'Asia');
 INSERT INTO regioes (id_regiao, nome) VALUES
 (4, 'Middle East and Africa');
+
+/* inserindo dados na tabela paises */
 
 INSERT INTO paises (pais, nome, id_regiao) VALUES
 (AR, 'Argentina',
@@ -426,6 +433,9 @@ INSERT INTO paises (pais, nome, id_regiao) VALUES
 (ZW, 'Zimbabwe',
 4);
 
+/* inserindo dados na tabela localizacoes */
+
+
 INSERT INTO localizacoes (id_localizacao, endereco, cep,
 cidade, uf, id_pais) VALUES
 (1000, '1297 Via Cola di Rie',00989, Roma,''. IT);
@@ -495,6 +505,9 @@ cidade, uf, id_pais) VALUES
 INSERT INTO localizacoes (id_localizacao, endereco, cep,
 cidade, uf, id_pais) VALUES
 (3200, 'Mariano Escobedo 9991',11932, Mexico City,'Distrito Federal,'. MX);
+
+
+/* inserindo dados na tabela departamentos */
 
 INSERT INTO departamentos (id_departamento, nome, id_localizacao,
 id_gerente) VALUES
@@ -577,6 +590,9 @@ id_gerente) VALUES
 INSERT INTO departamentos (id_departamento, nome, id_localizacao,
 id_gerente) VALUES
 (270, 'Payroll',1700, );
+
+/* inserindo dados na tabela empregados */
+
 
 INSERT INTO empregados (id_empregado, nome, email,
 telefone, data_contratacao, id_cargo, salario,
