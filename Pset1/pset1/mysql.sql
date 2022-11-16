@@ -320,6 +320,7 @@ REFERENCES empregados (id_empregado_)
 ON DELETE NO ACTION
 ON UPDATE NO ACTION;
 
+/* Inserindo dados na tabela cargos */
 
 INSERT INTO cargos (id_cargo,cargo ,salario_minimo,
 salario_maximo) VALUES
@@ -378,6 +379,8 @@ salario_maximo) VALUES
 INSERT INTO cargos (id_cargo,cargo ,salario_minimo,
 salario_maximo) VALUES
 (PR_REP, 'Public Relations Representative',4500, 10500);
+
+/* Inserindo dados na tabela regioes */
 
 INSERT INTO regioes (id_regiao, nome) VALUES
 (1, 'Europe');
@@ -464,6 +467,8 @@ INSERT INTO paises (pais, nome, id_regiao) VALUES
 (ZW, 'Zimbabwe',
 4);
 
+/* Inserindo dados na tabela localizacoes */
+
 INSERT INTO localizacoes (id_localizacao, endereco, cep,
 cidade, uf, id_pais) VALUES
 (1000, '1297 Via Cola di Rie',00989, Roma,''. IT);
@@ -533,6 +538,9 @@ cidade, uf, id_pais) VALUES
 INSERT INTO localizacoes (id_localizacao, endereco, cep,
 cidade, uf, id_pais) VALUES
 (3200, 'Mariano Escobedo 9991',11932, Mexico City,'Distrito Federal,'. MX);
+
+
+/* Inserindo dados na tabela departamentos*/
 
 INSERT INTO departamentos (id_departamento, nome, id_localizacao,
 id_gerente) VALUES
@@ -615,6 +623,8 @@ id_gerente) VALUES
 INSERT INTO departamentos (id_departamento, nome, id_localizacao,
 id_gerente) VALUES
 (270, 'Payroll',1700, );
+
+/* Inserindo dados na tabela empregados */
 
 INSERT INTO empregados (id_empregado, nome, email,
 telefone, data_contratacao, id_cargo, salario,
@@ -1044,6 +1054,8 @@ INSERT INTO empregados (id_empregado, nome, email,
 telefone, data_contratacao, id_cargo, salario,
 comissao, id_supervisor, id_departamento) VALUES
 (197, 'Kevin Feeney', 'KFEENEY', '650.507.9822', '2006-05-23', 'SH_CLERK', 3000, null, 124, 50);
+
+/* Inserindo dados na tabela historico_cargos */
 
 INSERT INTO historico_cargos (id_empregado, data_inicial, data_final,
 id_cargo, id_departamento)VALUES
